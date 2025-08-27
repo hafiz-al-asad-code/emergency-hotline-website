@@ -48,7 +48,7 @@
       </div>
     </nav>
     <!-- banner section -->
-    <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-[21px] mb-12">
+    <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-[21px] mb-[30px] md:mb-12">
       <figure>
         <img src="./assets/logo-dark.png" alt="" class="w-[92px] mx-auto">
       </figure>
@@ -60,11 +60,12 @@
   </header>
   <main>
     <!-- emergency hotline and call history section -->
-    <section class="w-11/12 mx-auto grid grid-cols-12 gap-[30px] p-2 mb-[86px]">
+    <section
+      class="lg:w-11/12 mx-4 lg:mx-auto grid md:grid-cols-12 gap-[30px] md:gap-[15px] lg:gap-[30px] mb-[50px] md:mb-[86px]">
       <!-- emergency hotline section -->
-      <section class="grid-cols-9 col-span-9">
+      <section class="md:grid-cols-9 md:col-span-9">
         <!-- emergency hotline cards -->
-        <div class="grid grid-cols-3 gap-[30px]">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[30px] md:gap-[15px] lg:gap-[30px]">
           <!-- card 1 -->
           <div class="bg-white p-8 rounded-xl shadow-[0px_2px_3px_0px_#00000026]">
             <!-- icon -->
@@ -266,7 +267,7 @@
             </div>
           </div>
           <!-- card 9 -->
-          <div class="bg-white p-8 rounded-xl shadow-[0px_2px_3px_0px_#00000026]">
+          <div class="bg-white p-8 rounded-xl shadow-[0px_2px_3px_0px_#00000026] md:hidden lg:block">
             <!-- icon -->
             <div class="flex justify-between items-center">
               <div class="rounded-2xl p-[14px] bg-[#ffe3e2]">
@@ -293,23 +294,31 @@
         </div>
       </section>
       <!-- call history section -->
-      <aside class="grid-cols-3 col-span-3 bg-white p-6 rounded-xl">
-        <div class="flex justify-between items-center mb-4">
-          <h3 class="text-xl font-medium"><i class="fa-regular fa-clock text-2xl" style="color: #5c5c5c;"></i> Call
+      <aside class="md:grid-cols-3 md:col-span-3 bg-white p-6 md:p-0 lg:p-6 rounded-xl md:pt-3">
+        <div class="flex md:flex-col lg:flex-row justify-between items-center mb-4">
+          <h3 class="text-xl md:text-[17px] lg:text-xl font-medium"><i
+              class="fa-regular fa-clock text-2xl md:text-[15px] lg:text-2xl" style="color: #5c5c5c;"></i> Call
             History</h3>
-          <button class="text-white font-semibold rounded-[50px] bg-[#00a63e] py-3 px-9">Clear</button>
+          <button
+            class="text-white font-semibold rounded-[50px] bg-[#00a63e] py-3 px-9 block md:hidden lg:block">Clear</button>
         </div>
         <!-- all calls -->
-        <div>
-          <div class="flex justify-between items-center bg-[#fafafa] p-4 rounded-lg mb-2">
+        <div class="md:px-2">
+          <div
+            class="flex md:flex-col lg:flex-row justify-between lg:items-center bg-[#fafafa] p-4 md:p-[5px] lg:p-4 rounded-lg mb-2">
             <div>
-              <h3 class="text-[18px] font-semibold">Fire Service Number</h3>
-              <p class="text-[18px] font-normal text-[#5C5C5C]">999</p>
+              <h3 class="text-[18px] md:text-[12px] lg:text-[18px] font-semibold md:font-bold lg: lg:font-semibold">
+                National Emergency Number</h3>
+              <p class="text-[18px] md:text-[12px] lg:text-[18px] font-normal text-[#5C5C5C]">999</p>
             </div>
             <div>
-              <p class="text-[18px]">11:36:58 AM</p>
+              <p class="text-[18px] md:text-[12px] lg:text-[18px]">11:36:58 AM</p>
             </div>
           </div>
+        </div>
+        <!-- clear button for medium devices -->
+        <div class="mx-2 mt-3 hidden md:block lg:hidden">
+          <button class="text-white font-semibold rounded-[50px] bg-[#00a63e] w-full py-[4px]">Clear</button>
         </div>
       </aside>
     </section>
