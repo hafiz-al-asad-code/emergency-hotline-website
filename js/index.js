@@ -19,7 +19,6 @@ for (let callBtn of callBtns) {
     const date = new Date().toLocaleTimeString();
     // const cardMobileNumber = event.target.parentNode.parentNode.parentNode.children[1].children[2].innerText;
 
-    // coin feature
     const coinNumber = Number(document.getElementById('coin-number').innerText);
 
     if (coinNumber < 20) {
@@ -56,9 +55,27 @@ for (let callBtn of callBtns) {
   })
 }
 
+// copy buttons functionality
+const copyBtns = document.getElementsByClassName('copy-btn');
+
+for (let copyBtn of copyBtns) {
+  copyBtn.addEventListener('click', function (event) {
+    const cardMobileNumber = event.target.parentNode.parentNode.children[1].children[2].innerText;
+
+    navigator.clipboard.writeText(cardMobileNumber);
+
+    alert(`The number has been copied: ${cardMobileNumber}`);
+
+    const copyNumber = Number(document.getElementById('copy-number').innerText);
+    const copyCount = copyNumber + 1;
+
+    document.getElementById('copy-number').innerText = copyCount;
+  })
+}
+
 // clear button fuctionality
 document.getElementById('clear-btn').addEventListener('click', function () {
   const callHistoryContainer = document.getElementById('call-history-container');
   callHistoryContainer.innerText = '';
-  
+
 })
