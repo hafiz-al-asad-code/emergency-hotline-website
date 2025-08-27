@@ -60,7 +60,7 @@
   </header>
   <main>
     <!-- cards and call history section -->
-    <section class="border-2 border-red-500 h-[1140px] w-11/12 mx-auto grid grid-cols-12 gap-[30px] p-2">
+    <section class="border-2 border-red-500 w-11/12 mx-auto grid grid-cols-12 gap-[30px] p-2">
       <!-- all cards section -->
       <section class="border-2 border-green-500 grid-cols-9 col-span-9">
         <!-- cards -->
@@ -292,10 +292,26 @@
           </div>
         </div>
       </section>
-      <!-- call history -->
-      <div class="border-2 border-blue-500 grid-cols-3 col-span-3">
-
-      </div>
+      <!-- call history section -->
+      <aside class="border-2 border-blue-500 grid-cols-3 col-span-3 bg-white p-6 rounded-xl">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-xl font-medium"><i class="fa-regular fa-clock text-2xl" style="color: #5c5c5c;"></i> Call
+            History</h3>
+          <button class="text-white font-semibold rounded-[50px] bg-[#00a63e] py-3 px-9">Clear</button>
+        </div>
+        <!-- all calls -->
+        <div>
+          <div class="flex justify-between items-center bg-[#fafafa] p-4 rounded-lg mb-2">
+            <div>
+              <h3 class="text-[18px] font-semibold">Fire Service Number</h3>
+              <p class="text-[18px] font-normal text-[#5C5C5C]">999</p>
+            </div>
+            <div>
+              <p class="text-[18px]">11:36:58 AM</p>
+            </div>
+          </div>
+        </div>
+      </aside>
     </section>
   </main>
 </body>
