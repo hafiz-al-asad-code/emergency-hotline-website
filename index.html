@@ -36,7 +36,7 @@
         </div>
         <!-- coin -->
         <div class="flex gap-[10px] rounded-[50px] bg-[#41ff6b1a] py-3 px-5">
-          <h1 class="font-black">100</h1>
+          <h1 id="coin-number" class="font-black">100</h1>
           <figure>
             <img src="./assets/coin.png" alt="" class="w-6">
           </figure>
@@ -87,7 +87,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -112,7 +112,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -137,7 +137,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -162,7 +162,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -187,7 +187,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -212,7 +212,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -237,7 +237,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -262,7 +262,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -287,7 +287,7 @@
               <button class="border border-[#d4d6d5] p-4 rounded-lg w-1/2 text-[#5c5c5c]"><i
                   class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
+              <button class="call-btn p-4 rounded-lg bg-[#00a63e] w-1/2 text-white"><i class="fa-solid fa-phone"
                   style="color: #ffffff;"></i> Call</button>
             </div>
           </div>
@@ -300,25 +300,15 @@
               class="fa-regular fa-clock text-2xl md:text-[15px] lg:text-2xl" style="color: #5c5c5c;"></i> Call
             History</h3>
           <button
-            class="text-white font-semibold rounded-[50px] bg-[#00a63e] py-3 px-9 block md:hidden lg:block">Clear</button>
+            id="clear-btn" class="text-white font-semibold rounded-[50px] bg-[#00a63e] py-3 px-9 block md:hidden lg:block">Clear</button>
         </div>
         <!-- all calls -->
-        <div class="md:px-2">
-          <div
-            class="flex md:flex-col lg:flex-row justify-between lg:items-center bg-[#fafafa] p-4 md:p-[5px] lg:p-4 rounded-lg mb-2">
-            <div>
-              <h3 class="text-[18px] md:text-[12px] lg:text-[18px] font-semibold md:font-bold lg: lg:font-semibold">
-                National Emergency Number</h3>
-              <p class="text-[18px] md:text-[12px] lg:text-[18px] font-normal text-[#5C5C5C]">999</p>
-            </div>
-            <div>
-              <p class="text-[18px] md:text-[12px] lg:text-[18px]">11:36:58 AM</p>
-            </div>
-          </div>
+        <div id="call-history-container" class="md:px-2 lg:px-0">
+         
         </div>
         <!-- clear button for medium devices -->
         <div class="mx-2 mt-3 hidden md:block lg:hidden">
-          <button class="text-white font-semibold rounded-[50px] bg-[#00a63e] w-full py-[4px]">Clear</button>
+          <button id="clear-btn" class="text-white font-semibold rounded-[50px] bg-[#00a63e] w-full py-[4px]">Clear</button>
         </div>
       </aside>
     </section>
@@ -326,7 +316,7 @@
 
 
   <!-- script -->
-   <script src="./js/index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
