@@ -60,4 +60,5 @@ for (let callBtn of callBtns) {
 document.getElementById('clear-btn').addEventListener('click', function () {
   const callHistoryContainer = document.getElementById('call-history-container');
   callHistoryContainer.innerText = '';
+  
 })
