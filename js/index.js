@@ -14,10 +14,11 @@ const callBtns = document.getElementsByClassName('call-btn');
 
 for (let callBtn of callBtns) {
   callBtn.addEventListener('click', function (event) {
-    const cardTitle = event.target.parentNode.parentNode.children[1].children[0].innerText;
-    const cardMobileNumber = event.target.parentNode.parentNode.children[1].children[2].innerText;
+    const cardTitle = event.target.parentNode.parentNode.children[0].children[1].children[0].innerText;
+    console.log(cardTitle);
+    const cardMobileNumber = event.target.parentNode.parentNode.children[0].children[1].children[2].innerText;
+    console.log(cardMobileNumber);
     const date = new Date().toLocaleTimeString();
-    // const cardMobileNumber = event.target.parentNode.parentNode.parentNode.children[1].children[2].innerText;
 
     const coinNumber = Number(document.getElementById('coin-number').innerText);
 
@@ -60,7 +61,7 @@ const copyBtns = document.getElementsByClassName('copy-btn');
 
 for (let copyBtn of copyBtns) {
   copyBtn.addEventListener('click', function (event) {
-    const cardMobileNumber = event.target.parentNode.parentNode.children[1].children[2].innerText;
+    const cardMobileNumber = event.target.parentNode.parentNode.children[0].children[1].children[2].innerText;
 
     navigator.clipboard.writeText(cardMobileNumber);
 
@@ -75,7 +76,7 @@ for (let copyBtn of copyBtns) {
 
 // clear button fuctionality
 const clearBtns = document.getElementsByClassName('clear-btn');
-console.log(clearBtns);
+// console.log(clearBtns);
 
 for (let clearBtn of clearBtns) {
   clearBtn.addEventListener('click', function () {
