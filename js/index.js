@@ -74,8 +74,12 @@ for (let copyBtn of copyBtns) {
 }
 
 // clear button fuctionality
-document.getElementById('clear-btn').addEventListener('click', function () {
-  const callHistoryContainer = document.getElementById('call-history-container');
-  callHistoryContainer.innerText = '';
+const clearBtns = document.getElementsByClassName('clear-btn');
+console.log(clearBtns);
 
-})
+for (let clearBtn of clearBtns) {
+  clearBtn.addEventListener('click', function () {
+    const callHistoryContainer = document.getElementById('call-history-container');
+    callHistoryContainer.innerText = '';
+  })
+}
