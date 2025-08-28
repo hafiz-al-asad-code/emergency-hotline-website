@@ -1,8 +1,8 @@
 ### 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?<br/>
-   **=>** These are all Document Objective Model(DOM) selection methods in JavaScript.
+   **=>** These are all Document Object Model(DOM) selection methods in JavaScript.
 
 - **getElementById:** This method selects an element by its unique id. It returns a single element object.
-- **getElementsByClassName:** This method selects all elements with a given class name. It returns a HTML collection which is a live collection that means it updates automatically if the DOM chanhes. From the HTML collection, elements can be accessed like array.
+- **getElementsByClassName:** This method selects all elements with a given class name. It returns a HTML collection which is a live collection that means it updates automatically if the DOM changes. From the HTML collection, elements can be accessed like an array.
 - **querySelector:** This method selects the first element that matches a CSS selector. It returns a single element.
 - **querySelectorAll:** This method selects all elements that match a CSS selector. It returns a NodeList.
 
