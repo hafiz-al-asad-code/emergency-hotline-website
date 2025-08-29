@@ -39,7 +39,7 @@ for (let callBtn of callBtns) {
     callHistory.innerHTML = `
        <div class="flex md:flex-col lg:flex-row justify-between lg:items-center bg-[#fafafa] p-4 md:p-[5px] lg:p-[12px] rounded-lg mb-2">
             <div>
-              <h3 class="text-[18px] md:text-[12px] lg:text-[14px] font-semibold md:font-bold lg:font-semibold">
+              <h3 class="text-[18px] md:text-[12px] lg:text-[14px] font-semibold md:font-bold lg:font-semibold inter-font">
                 ${cardTitle}</h3>
               <p class="text-[18px] md:text-[12px] lg:text-[14px] font-normal text-[#5C5C5C]">${cardMobileNumber}</p>
             </div>
